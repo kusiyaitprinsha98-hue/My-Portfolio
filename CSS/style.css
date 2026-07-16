@@ -1,0 +1,285 @@
+body{
+    font-family: "segoe UI", roborto, sans-serif;
+    background-color:rgb(207, 200, 200);
+    line-height: 1.6;
+    color:rgb(25, 26, 27);
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0.5rem 1rem 0.5rem 1rem;
+    background:whitesmoke;
+}
+
+.logo{
+    justify-self: start;
+}
+
+nav{
+    display: flex;
+    align-items: cenetr;
+    justify-self: cenetr;
+    background: lightgreen;
+    padding: 12px 25px;
+    border-radius: 10px;
+}
+nav ul{
+    display: flex;  
+    list-style: none;  
+    gap: 2rem;   
+}
+nav a{
+    color:rgb(12, 50, 164);
+    text-decoration: none;
+    font-size: larger;
+    font-weight: bold;
+}
+nav a:hover{
+    color:yellowgreen;
+    font-weight: 500;
+}
+header form{
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+    justify-self: end;
+}
+
+header img{
+    width: 8%;
+    border-radius: 8px;
+}
+
+header input, 
+header button{
+    padding: 0.5rem;
+    border-radius: none;
+}
+
+header input{
+    width: 250px;
+}
+
+header button{
+    width: 100px;
+    background-color:rgb(38, 193, 164);
+    margin-left: 10px;
+}
+
+main{
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+
+
+.about-container,
+.skills-container,
+.projects-container,
+.contact-conatiner,
+    background:red;
+    padding: 2rem;
+    border-radius:10px;
+    margin-bottom:2rem;
+    box-shadow:0 4px 12px rgba (0,0,0,0.1);
+}
+
+h1,h2{
+    font-family: "Segoe UI", Roboto, sans-serif;
+    color:brown;
+    margin-bottom: 1rem;
+}
+
+h1{
+    font-size: 2rem;
+    border-bottom: 2px solid  yellow;
+    display: inline-block;
+    padding-bottom: 0.3rem;
+}
+
+h2{
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+
+.about-container{
+    display: flex;
+}
+
+.skills-grid{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+}
+
+.skills-card{
+    background: rgb(17, 16, 17);
+    padding:1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px skyblue;
+}
+
+.skills-card dt{
+    font-size: 1.2rem;
+    border-bottom:2px solid #f1efef;
+    display: inline-block;
+    padding-bottom: 0.3rem;
+    color: rgb(157, 190, 91);
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.skills-card dd{
+    margin: 0;
+    color: #38ce2b;
+    font-size: 1rem;
+}
+
+ 
+.skills-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgb(156, 61, 140);
+}
+
+.projects-container article{
+    background: rgb(193, 209, 127);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgb(41, 91, 140);
+    margin-bottom: 1.5rem;
+}
+
+.projects-container a{
+    color: blue;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.projects-container a:hover{
+    color: rgb(72, 72, 51);
+}
+
+.projects-container article:hover{
+    transform: translateY(-5px);
+}
+
+
+.contact-container form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-container label{
+    font-weight: bold;
+    color: #1b0de4;
+    margin-top: 1rem;
+}
+
+.contact-container input,
+.contact-container textarea{
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 0.5rem;
+    border: 1px solid rgb(187, 186, 199);
+    border-radius: 6px;
+}
+
+.contact-container button{
+    margin-top: 1rem;
+    background-color: #e6e920;
+    color: #000;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+}
+
+.conatct-container button{
+    color: whitesmoke;
+    padding: 1rem;
+    border: none;
+    border-radius: 6px;
+}
+
+.contact-container button:hover{
+    background: rgb(188, 63, 104);
+    color: blue;
+}
+
+footer{
+    background-color: rgb(7, 126, 63);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        algin-items: flex-start;
+        gap: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        background: blue;
+        padding: 1rem;
+        border-radius: 8px;
+    }
+
+    nav a {
+        font-size: 1rem;
+        display: block;
+        padding: 0.5rem;
+        border-radius: 6px;
+    }
+
+    .search-bar {
+        width: 100%;
+    }
+
+    .search-bar input {
+        width: 100%;
+    }
+
+    .about-container{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-container img {
+        width: 100%;
+        max-width: 250px;
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    nav ul {
+        gap: 1rem;
+    }
+
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center; 
+    }
+}
+
+
+
+
+
+
+
